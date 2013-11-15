@@ -22,6 +22,9 @@
 		D78AAE2C18362AF500A7BAB1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78AAE0B18362AF500A7BAB1 /* UIKit.framework */; };
 		D78AAE3418362AF500A7BAB1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D78AAE3218362AF500A7BAB1 /* InfoPlist.strings */; };
 		D78AAE3618362AF500A7BAB1 /* MIHomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D78AAE3518362AF500A7BAB1 /* MIHomeTests.m */; };
+		D78AAE4018362EA100A7BAB1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D78AAE3F18362EA100A7BAB1 /* CoreLocation.framework */; };
+		D7B5835C1836318F00D0BFFB /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5835B1836318F00D0BFFB /* AddressBook.framework */; };
+		D7B5835E1836375600D0BFFB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7B5835D1836375600D0BFFB /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		D78AAE3118362AF500A7BAB1 /* MIHomeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MIHomeTests-Info.plist"; sourceTree = "<group>"; };
 		D78AAE3318362AF500A7BAB1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D78AAE3518362AF500A7BAB1 /* MIHomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MIHomeTests.m; sourceTree = "<group>"; };
+		D78AAE3F18362EA100A7BAB1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D7B5835B1836318F00D0BFFB /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		D7B5835D1836375600D0BFFB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7B5835E1836375600D0BFFB /* MapKit.framework in Frameworks */,
+				D7B5835C1836318F00D0BFFB /* AddressBook.framework in Frameworks */,
+				D78AAE4018362EA100A7BAB1 /* CoreLocation.framework in Frameworks */,
 				D78AAE0A18362AF500A7BAB1 /* CoreGraphics.framework in Frameworks */,
 				D78AAE0C18362AF500A7BAB1 /* UIKit.framework in Frameworks */,
 				D78AAE0818362AF500A7BAB1 /* Foundation.framework in Frameworks */,
@@ -103,6 +112,9 @@
 		D78AAE0618362AF500A7BAB1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D7B5835D1836375600D0BFFB /* MapKit.framework */,
+				D7B5835B1836318F00D0BFFB /* AddressBook.framework */,
+				D78AAE3F18362EA100A7BAB1 /* CoreLocation.framework */,
 				D78AAE0718362AF500A7BAB1 /* Foundation.framework */,
 				D78AAE0918362AF500A7BAB1 /* CoreGraphics.framework */,
 				D78AAE0B18362AF500A7BAB1 /* UIKit.framework */,
@@ -202,6 +214,9 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Jonas Berglund";
 				TargetAttributes = {
+					D78AAE0318362AF500A7BAB1 = {
+						DevelopmentTeam = ZZ64DKD8Y3;
+					};
 					D78AAE2718362AF500A7BAB1 = {
 						TestTargetID = D78AAE0318362AF500A7BAB1;
 					};
@@ -392,6 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MIHome/MIHome-Prefix.pch";
 				INFOPLIST_FILE = "MIHome/MIHome-Info.plist";
@@ -405,6 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MIHome/MIHome-Prefix.pch";
 				INFOPLIST_FILE = "MIHome/MIHome-Info.plist";
@@ -474,6 +491,7 @@
 				D78AAE3B18362AF500A7BAB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D78AAE3C18362AF500A7BAB1 /* Build configuration list for PBXNativeTarget "MIHomeTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +500,7 @@
 				D78AAE3E18362AF500A7BAB1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
